@@ -16,4 +16,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
 ![image](https://github.com/KamiloMontoya/kambcode_g1/assets/11945476/8d8f7da6-aa4c-4d67-9dec-59cd360bda0f)
 
 ## Grabaciones de Clases
- - 24/07/2023 - Fundamentos de HTML 
+ - 24/07/2023 - Fundamentos de HTML https://youtu.be/f8IT_YoU8fQ

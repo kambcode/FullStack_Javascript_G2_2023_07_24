@@ -1,312 +1,230 @@
-# Introducción a CSS
+# Editores de texto
 
-## ¿Para qué se usa CSS?
+Lo primero que vas a necesitar para iniciar el bootcamp es un **editor de texto**. Un **editor de texto** es una aplicación que nos permite crear y editar archivos de texto como su nombre lo indica.
 
-CSS (Cascading Style Sheets) se usa para dar estilo y diseño a las páginas web como cambiar fuentes, modificar colores, tamaños, incluir animaciones entre otros. La idea es que en este apartado inicies tu ruta de aprendizaje hacia el dominio de CSS con su funcionamiento básico y como añadir estilo a HTML.
+A diferencia de un procesador de palabras (como Microsoft Word), un editor de texto se utiliza para crear archivos de texto **sin formato**.
 
-## Sintaxis del CSS
+Cada sistema operativo trae algún editor de texto como **Bloc de Notas** en Windows o **TextEdit** en Mac. Sin embargo, existen editores de texto especializados para programadores que tienen varias ventajas sobre el editor que viene en tu sistema operativo:
 
-Por simplicidad, CSS se estructura basado en reglas, cada usuario define las reglas que reúnen los grupos de estilos que se aplicaran a los elementos particulares de interés o grupos de elementos en múltiples páginas.
+- Resalta la sintaxis de acuerdo al lenguaje de programación para facilitar su lectura.
+- Ayuda a auto completar el código.
+- Es altamente personalizable a través de archivos de configuración o plugins.
+  Ejemplos de editores de texto para programadores incluyen [Sublime Text](https://www.sublimetext.com/), [Atom](https://atom.io/) y [VSCode](https://code.visualstudio.com/), entre muchos otros.
 
-Como por ejemplo, "Quiero que los títulos tengan color verde y una fuente de 60px".
+Para efectos de ejemplo te invitamos a instalar **VSCode** ingresa [**aquí**](https://code.visualstudio.com/download) y selecciona tu sistema operativo para continuar con el proceso de instalación.
 
-    h1 {
-        color: green;
-    	font-size: 60px;
-    }
+# Introducción a HTML
 
-Entonces, la regla inicia con un selector, que pueden ser clases, id's, elementos html, selectores avanzados o conjuntos de los anteriores para aplicar de manera general un estilo.
+**Con HTML puedes hacer visible tu contenido en las páginas web**.
+Las páginas web son visualizadas a través de navegadores web como chrome, firefox, brave entre otros, estos son clientes web que se encargan entre otras cosas de interpretar el HTML para visualizar a los usuarios los contenidos de una manera estructurada.
 
-Continuamos con un conjunto de llaves **{ }** entre estas se definirán las declaraciones a aplicar que tendrán forma de propiedad, valor separado por dos punto y terminada cada una de ellas con punto y coma.
+## ¿Qué es HTML?
 
-Antes de los dos puntos encontraremos las propiedades, muchas de uso cotidiano serán fácil de recordar, pero son muchas y en ocasiones será necesario buscar en la web para escribirlas y después de los dos puntos encontraremos los valores que estaán definidos por aquellos que pueda recibir la propiedad.
+Es un lenguaje muy sencillo compuesto de elementos, que se pueden aplicar a piezas de texto para darles un significado diferente en un documento, por medio de etiquetas puedes identificar si es un párrafo, si es una lista, si es una tabla de contenidos, si quieres insertar imagenes o videos, entre otras muchas otras posibilidades que HTML ofrece.
+HTML (Lenguaje de Marcas de Hipertexto, del inglés \_HyperText Markup Language) es el componente más básico de la web y no es un lenguaje de programación.
 
-## Especificaciones CSS
+## Anatomía de un documento HTML
 
-Todas las tecnologías de estándares web (HTML, CSS, JavaScript, etc.) se definen en extensos documentos denominados especificaciones, publicados por organizaciones de estándares (como [W3C ](https://developer.mozilla.org/en-US/docs/Glossary/W3C "Currently only available in English (US)"), [WHATWG](https://developer.mozilla.org/es/docs/Glossary/WHATWG), [ECMA ](https://developer.mozilla.org/en-US/docs/Glossary/ECMA "Currently only available in English (US)") o [Khronos (en-US)](https://developer.mozilla.org/en-US/docs/Glossary/Khronos "Currently only available in English (US)")) que definen con precisión cómo se supone que deben comportarse esas tecnologías.
-
-El caso de CSS no es diferente: lo desarrolla un grupo del W3C llamado [CSS Working Group](https://www.w3.org/Style/CSS/). Este grupo está compuesto por representantes de proveedores de navegadores y otras compañías interesadas en CSS. También hay otras personas, conocidas como _expertos invitados_, que actúan como voces independientes y no están vinculados a ninguna organización.
-
-# ¿Cómo se estructura el CSS?
-
-Ya conociendo un poco el concepto de lo que es CSS y como funciona un poco su sintaxis, ahora hablemos de como estructurarlo para esto empecemos por conocer los tres métodos para aplicar CSS a un documento.
-
-## Hoja de estilos externa
-
-En la clase 1 tuvimos una aproximación a este comportamiento donde incluíamos entre las etiquetas `<head></head>` una línea como esta `<link rel="stylesheet" href="styles.css">` con la que incluíamos muchos estilos que modificaban la interfaz de tarea.
-
-Este es el método más común y útil para adjuntar CSS a un documento, porque puedes vincular el CSS a varias páginas y dar estilo a todas ellas con la misma hoja de estilo; pero que implicaciones tiene esto, debemos escribir un archivo independiente con extensión .css y lo debemos vincular con la etiqueta `<link>` de HTML.
-
-El atributo `href` del elemento [`<link>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/link) tiene que hacer referencia a un archivo de tu sistema de archivos.
-
-En el ejemplo anterior, el archivo CSS está en la misma carpeta que el documento HTML, pero puedes colocarlo en otro lugar y especificar la ruta adecuada. Por ejemplo: `<link rel="stylesheet" href="styles/style.css"> o <link rel="stylesheet" href="styles/general/style.css"> o <link rel="stylesheet" href="../styles/style.css">`.
-
-## Hoja de estilos interna
-
-Una hoja de estilo interna es cuando no hay ningún archivo CSS externo, sino que colocas tu CSS dentro de un elemento `<style>` contenido dentro del elemento `<head>` del HTML.
-
-En este caso, el HTML se vería así:
+Como venimos hablando, HTML está compuesto de múltiples elementos que por si solos no logran dar significado a un texto, para que estos elementos sean interpretados de manera correcta, necesitan de un contexto, de un elemento superior que los enmarque globalmente y es por esto que hablamos de la anatomía de un documento HTML como lo vemos a continuación:
 
     <!DOCTYPE html>
     <html>
         <head>
     	    <meta charset="utf-8">
-    	    <title>Mi experimento CSS</title>
-    	    <style>
-    		    h1 {
-    			    color: blue;
-    			    background-color: yellow;
-    			    border: 1px solid black;
-    			}
-    			p {
-    				color: red;
-    			}
-    		</style>
+    	    <title>Mi pagina de prueba</title>
     	</head>
     	<body>
-    		<h1>¡Hola, mundo!</h1>
-    		<p>Este es mi primer ejemplo de CSS</p>
+    	    <img src="images/firefox-icon.png" alt="Mi imagen de prueba">
     	</body>
     </html>
 
-Esto puede ser útil en algunas circunstancias donde no se tenga acceso a modificar directamente los archivos css, pero no es eficiente ni recomendable pues si el cambio se necesita en muchas páginas es necesario replicar en cada una de ellas lo que lo haría inmantenible en el tiempo.
+En la estructura básica tienes los siguientes elementos:
 
-## Estilos en línea
+- `<!DOCTYPE html>`: el tipo de documento. Es un preámbulo requerido. Hoy día es simplemente un artefacto antiguo que a nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por ahora, eso es todo lo que necesitas saber.
+- `<html></html>` — el elemento [`<html>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/html) encierra todo el contenido de la página entera y, en ocasiones, se le conoce como el elemento raíz.
+- `<head></head>` — el elemento [`<head>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/head) actúa como un contenedor de todo aquello que quieres incluir en la página HTML que no es contenido visible por los visitantes de la página. Incluye cosas como palabras clave, una descripción de la página que quieres que aparezca en resultados de búsquedas, código CSS para dar estilo al contenido, declaraciones del juego de caracteres, etc.
+- `<meta charset="utf-8">` — [`<meta>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/meta). Este elemento establece el juego de caracteres que tu documento usará en `utf-8`, que incluye casi todos los caracteres de todos los idiomas humanos.
+- `<title></title>` — el elemento [`<title>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/title) establece el título de tu página, que es el título que aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y se usa para describir la página cuando es añadida a los marcadores o como favorita.
+- `<body></body>` — el elemento [`<body>`](https://developer.mozilla.org/es/docs/Web/HTML/Element/body) Encierra todo el contenido que deseas mostrar a los usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio reproducibles, y demás.
 
-Es en definitiva la menos recomendable de usar, pero como todo tiene su excepción, casos como CMS que solo te permitan tocar el HTML a personalizar o por ejemplo los templates para emails done usas estos estilos en línea para lograr mayor compatibilidad entre navegadores, un ejemplo de esto seriá el siguiente:
-
-    <!DOCTYPE html>
-    <html>
-        <head>
-    	    <meta charset="utf-8">
-    	    <title>Mi experimento CSS</title>
-    	</head>
-    	<body>
-    		<h1 style="color: blue;background-color: yellow;border: 1px solid black;">¡Hola mundo!</h1>
-    		<p style="color:red;">Este es mi primer ejemplo de CSS</p>
-    	</body>
-    </html>
-
-# Selectores
-
-Como lo hablábamos en la sintaxis, toda regla de CSS comienza por un selector. Un selector es, como determinamos, un elemento de nuestro documento HTML para aplicarle estilo. Si los estilos no se aplican correctamente, es probable que el selector no coincida con lo que crees que debería coincidir.
-
-Puede existir un solo selector para una regla así como un conjunto de selectores que permiten agrupar un aserie de elementos sobre los cuales aplica la regla, algunos ejemplos de selectores pueden ser:
-
-    h1
-    a:link
-    .manythings
-    #onething
-    *
-    .box p
-    .box p:first-child
-    h1, h2, .intro
-
-Para introducirnos un poco más vamos a hablar de 2 selectores básicos adicionales a los ya antes mencionados elementos HTML, que son el selector por ID y el selector por CLASE, tanto el ID como la CLASE son atributos de los elementos HTML como por ejemplo:
-
-    <p class="special">¿De qué color soy?</p>
-    <p id="special_id">¿De qué color soy?</p>
-
-Ambos atributos nos permiten trabajar con diferentes niveles de especificidad, si hablamos de un id, estamos buscando especificar un único elemento dentro del documento, cuando hablamos de una clase podremos hablar de un conjunto de elementos en el documento entre los que coinciden algunas reglas de estilo para aplicar de manera general. Así veríamos en nuestra hoja de estilos, algunas reglas basadas en clases y en id:
-
-    .special {
-    	color: red;
-    }
-    #special_id {
-    	font-size: 60px;
-    }
-
-## Especificidad
-
-Conforme hemos venido avanzando con CSS nos podremos estar preguntando en este momento, ¿qué pasa si tengo dos reglas una aplicada en línea, otra aplicada en hoja de estilos interna y otra aplicada en hoja de estilos externa? ¿cuál será el resultado final? ¿qué reglas realmente aplicaran sobre el elemento?, bueno para resolver esta inquietud hablamos de especificidad y en esto CSS es muy claro y tiene reglas para controlar cuál ganará en caso de colisión; reciben el nombre de **cascada** y **especificidad**.
-
-Si hablamos de cascada hacemos referencia la orden en que aparecen las reglas a lo largo de una archivo css, el último en aparecer va a tener relevancia sobre los que aparecieron anteriormente, y si hablamos de especificidad podríamos decir que una clase es más específica que un elemento HTML.
-
-Las reglas de especificidad y de cascada pueden son más fáciles de entender a medida que se van adquiriendo conocimientos de CSS. En el artículo sobre [Cascada y herencia](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance), puedes encontrar más detalle, incluyendo cómo calcular la especificidad. Por ahora, basta con saber que existe y que a veces el CSS no se aplica como esperas porque algo más en la hoja de estilo tiene una mayor especificidad. El hecho de identificar que más de una regla podría aplicarse a un elemento es el primer paso para solucionar estos problemas.
-
-# Estilos básicos de CSS
-
-## Estilos para texto
-
-| Atributo    | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| font        | Especifica todos los atributos en una sola declaración usando el siguiente orden: font-style font-variant font-weight font-size/line-height font-family, por ejemplo:"font:15px arial,sans-serif;" "font:italic bold 18px Georgia, serif;"                                                                                                                                                                                                                                                                                                                                                                 |
-| font-family | Especifica el tipo de fuente a emplear, utiliza el vínculo para leer mas información                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| font-size   | Permitir definir con toda exactitud el tamaño de las fuentes del texto contenido en un bloque especificando su tamaño en pixeles, por ejemplo: "font-size:12px;". Otra forma de definirlo es usando los siguientes valores: xx-small, x-small, small, medium, large, x-large, xx-large, smaller y larger. También para establecer la medida del texto se utiliza la unidad "em", 1em es la fuente predeterminada en una página, la relación entre em y pixeles se calcula con las siguientes fórmulas: em = pixeles/16 o pixeles= em X 16 Por ejemplo: Una fuente de 2em = 32px Una fuente de 24px = 1.5em |
-| font-style  | Estilo de la fuente del texto, valores: "font-style:italic;" estilo en itálica "font-style:oblique;"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| font-weight | Especifica el grosor o no de la fuente: "font-weight:normal;" grueso normal "font-weight:bold;" grueso, conocido como negrita "font-weight:bolder;" grueso mas grueso "font-weight:lighter;" (100 a 900)                                                                                                                                                                                                                                                                                                                                                                                                   |
-| color       | La propiedad de CSS color selecciona el valor de color de primer plano del contenido de elemento de texto y decoraciones de texto. por ejemplo: `/* Valores de palabras clave*/ color: currentcolor; /* Valores <named-color> */ color: red; /* Valores <hex-color> */ color: #009900; /* Valores <rgb()> */ color: rgb(34, 12, 64, 0.6); /* Valores <hsl()> */ color: hsl(30, 100%, 50%, 0.6); /* Valores Globales */ color: inherit;`                                                                                                                                                                    |
-| text-align  | Especifica la alineación horizontal del texto de la siguiente forma: "text-align:left;" texto a la izquierda "text-align:center;" texto centrado "text-align:right;" texto a la derecha                                                                                                                                                                                                                                                                                                                                                                                                                    |
-
-## Estilos para bloques/cajas
-
-| Atributo         | Descripción                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| background-color | Establece el color del fondo de un elemento. Por ejemplo en esta celda se usa: background-color: #e1f5fe;                                                                                                                                                                                                                                                       |
-| background-image | Permite crear un degradado o difuminado. Por ejemplo en esta celda se usa: background-image: linear-gradient(to left, #fff, #44a0e9);                                                                                                                                                                                                                           |
-| border-style     | Establece el estilo de los cuatro bordes, el parámetro estilo admite uno de los siguientes valores: "border-style:solid;" "border-style:dashed;" "border-style:double;" "border-style:groove;" "border-style:ridge;" "border-style:inset;" "border-style:outset;"                                                                                               |
-| border-color     | Establece el color de los cuatro bordes                                                                                                                                                                                                                                                                                                                         |
-| border-width     | Establece el ancho de los cuatro bordes definido en pixeles                                                                                                                                                                                                                                                                                                     |
-| margin-left      | Se entiende por margen el espacio existente entre el bloque y el borde correspondiente de la pantalla activa del navegador. Así que el margen izquierdo será la distancia entre el lado izquierdo del bloque y el borde izquierdo de la pantalla del navegador. margin-left establece el margen a partir del lado izquierdo de un elemento expresado en pixeles |
-
-## Estilos para posicionar un elemento
-
-| Atributo | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| display  | La propiedad display establece la manera en que se muestra un elemento. Los elementos HTML son generalmente "inline" o "block", inline permiten tener contenido flotante a la derecha o a la izquierda, los elementos block ocupan la línea completa por lo que no admiten lo anterior. También la propiedad display permite mostrar o no un elemento usando display:none, similar a la propiedad visibility:hidden, la diferencia es que en visibility el elemento se oculta pero permanece en su lugar. Los valores que se pueden emplear son: block, compact, inline, none, inline-block, inline-table, list-item, marker, run-in, table |
-| float    | Especifica si un elemento debe flotar, los valores pueden ser: left, none, right, inherit                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| position | Define el tipo de posicionamiento usado por un elemento, valores: static, relative, absolute o fixed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| z-index  | Permite establecer el orden en que debe mostrarse los elementos, solo funciona en elementos posicionados (position:absolute, position:relative, o position:fixed), por ejemplo: "z-index:1;"                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-
-## Propiedades personalizadas o variables de CSS
-
-En CSS, las **propiedades personalizadas** son entidades que podemos definir y que contienen valores específicos que se pueden volver a utilizar en un documento. Se establecen mediante la notación de propiedades personalizadas (por ejemplo, **`--main-color: black;`**) y se acceden mediante la función `var()`, por ejemplo, color: **`var (--main-color);`**.
-
-### Uso básico
-
-Para declarar propiedades personalizadas (variables) usamos un nombre que comience con dos guiones (`--`), y un valor que puede ser cualquier valor válido de CSS. Como cualquier otra propiedad, la escribimos dentro de un set de reglas de estilo, algo así:
-
-```
-elemento {
-  --main-bg-color: brown;
-}
-```
-
-En el ejemplo anterior, "elemento" define el scope de trabajo de la variable que se declara en su interior, más adelante hablaremos un poco más sobre el scope, por ahora fíjate en la estructura de definición de las variables.
-
-### Valores de sustitución
-
-Con el uso de var( ), podemos definir múltiples valores de sustitución que pueden reemplazar la definición original en caso de que esta no existe o contenga un valor erróneo, esto se puede lograr concatenando múltiples var() en el segundo argumento; cabe anotar que, los valores de sustitución no solucionan problemas de compatibilidad de navegadores, estos son útiles solo si el navegador soporta las propiedades personalizadas CSS.
-
-Por ejemplo:
-
-```
-.dos {
-  color: var(--my-var, red); /* Rojo (red) si --my-var no esta definida */
-}
-
-.tres {
-  background-color: var(--my-var, var(--my-background, pink)); /* Rosa (pink) si my-var y --my-background no están definidas */
-}
-
-.tres {
-  background-color: var(--my-var, --my-background, pink); /* Invalido: "--background, pink" */
-}
-
-```
-
-Como vemos en el segundo ejemplo de arriba, la manera correcta de incluir más de un fallback es usar una propiedad personalizada como fallback (la cual tiene su propio fallback). Esta técnica se ha visto que puede causar problemas de rendimiento al tomar más tiempo analizar las variables.
-
-### Validez y valores
-
-La validez en el concepto de las propiedades de CSS, no es muy útil con respecto a las propiedades personalizadas. Esto a que el navegador al ver las propiedades personalizadas no sabe donde van a ser utilizadas por lo que por defecto se ve obligado a tratar los valores como válidos.
-
-En tiempo de ejecución, las propiedades y variables personalizadas pueden llevar a declaraciones CSS no válidas, dando lugar al nuevo concepto de _válido en tiempo calculado_, lo que implica que su validez va a estar asociada al momento en que se ejecuta y/o interpreta.
-
-### ¿Qué pasa con los valores inválidos?
-
-Cuando el navegador encuentra una sustitución inválida con `var()`, se usará el valor inicial o heredado. Por ejemplo:
-
-```
-<p>This paragraph is initial black.</p>
-
-```
-
-```
-:root { --text-color: 16px; }
-p { color: blue; }
-p { color: var(--text-color); }
-
-```
-
-Como esperaríamos, el navegador sustituye `var(--text-color)` con el valor de `--text-color`, pero `16px` no es un valor válido para la propiedad `color`. Después de la sustitución, la propiedad no tiene sentido. El navegador maneja esta situación en dos pasos:
-
-1.  Comprueba si la propiedad color se puede heredar. Sí, pero el elemento `<p>` no tiene un padre con una propiedad color. Así que pasamos al siguiente paso.
-2.  Toma el valor de su **valor inicial por defecto**.
-
-### Scope y herencia de propiedades personalizadas
-
-El selector que se use para las reglas de estilo define el ámbito (scope) en el que podremos usar la propiedad personalizada (variable). Una buena práctica común es declarar variables en la pseudo-clase `:root`, y así aplicarlas globalmente al documento HTML:
-
-```
-:root {
-  --main-bg-color: brown;
-}
-
-```
-
-**Nota:** Los nombres de propiedades personalizadas distinguen entre mayúsculas y minúsculas — `--my-color` será tratado como una propiedad personalizada distinta a `--My-color`.
-
-Las propiedades personalizadas heredan. Lo que significa que si no se establece ningún valor para una propiedad personalizada en un elemento dado, se utiliza el valor de su elemento padre. Por ejemplo:
-
-```
-<div class="uno">
-  <div class="dos">
-    <div class="tres"></div>
-    <div class="cuatro"></div>
-  </div>
-</div>
-
-```
-
-... con el siguiente CSS:
-
-```
-.dos {
-  --test: 10px;
-}
-
-.tres {
-  --test: 2em;
-}
-
-```
-
-En este caso, los resultados de `var(--test)` son:
-
-- Para el elemento `class="dos"`: `10px`
-- Para el elemento `class="tres"`: `2em`
-- Para el elemento `class="cuatro"`: `10px` (heredado de su padre)
-- Para el elemento `class="uno"`: _valor no válido_.
-
-## Funciones de css
-
-Son funciones de apoyo que podemos utilizar en CSS para realizar cálculos u operaciones sencillas de una forma fácil y sencilla, sin tener que abandonar CSS.
-
-### Función calc()
-
-Es posible que en algunas ocasiones necesitemos indicar **valores pre calculados** por el navegador. Por ejemplo, la suma de dos valores que a priori desconocemos o no sabemos exactamente cuanto suman, pero que el navegador si debería conocer.
-
-Esto es posible hacerlo con la función `calc()` de CSS, como se muestra a continuación:
-
-```
-.elemento {  width: calc(200px + 1em);  height: 300px;  background: blue;}
-```
-
-Como se puede ver, se pueden usar operaciones como sumas ( `+` ), restas ( `-` ), multiplicaciones ( `*` ) o divisiones ( `/` ) que utilicen alguna de las unidades soportadas por CSS, como por ejemplo, números, dimensiones, porcentajes, tiempos, ángulos, etc...
-
-### Función min()
-
-En algunas ocasiones, necesitaremos que en una propiedad se aplique un valor de varias posibilidades posibles. De dichas posibilidades, no sabremos exactamente cuál necesitamos, pero si sabremos una de sus cualidades: **es la más pequeña**, es decir, necesitamos el valor mínimo.
-
-CSS permite realizar esto utilizando la función `min()` que nos permite elegir el valor más pequeño de 2 o más posibilidades aplicadas por parámetro:
-
-```
-.elemento {  width: min(200px, 25%);  height: 200px;  background: red;}
-```
-
-Esto aplicaría un `width` de `200px`, siempre y cuando el `25%` del elemento padre sea más grande de `200px`. Todo este cálculo, generalmente realizado en Javascript debido a su cualidad de lógica de cálculo, puede realizarse desde CSS si sólo se utiliza exclusivamente para esta finalidad.
-
-### Función max()
-
-De la misma forma que tenemos una función `min()`, también tenemos una función `max()`. Como podemos imaginar, dicha función sirve para lo opuesto de la función `min()`: obtener el valor máximo entre varias posibilidades.
-
-Observa el siguiente ejemplo, donde utilizamos **más de 2 parámetros** (_ambas funciones permiten múltiples valores, no necesariamente dos_):
-
-```
-.elemento {  width: max(200px - 100px, 25%, 14vw);  height: 200px;  background: red;}
-```
-
-Observa que como se ve en el ejemplo en `200px - 100px`, tanto en `min()` como en `max()`, puedes realizar operaciones directamente en su interior sin necesidad de utilizar la función `calc()`.
-
-Para conocer más sobre otras funciones ingresa [aquí](http://w3.unpocodetodo.info/css3/funciones_css.php)
+## Anatomía de un elemento HTML:
+
+Un elemento se compone de varias partes en su definición, a continuación detallamos las principales:
+
+1.  **La etiqueta de apertura**: consiste en el nombre del elemento encerrado por **paréntesis angulares** (< >) de apertura y cierre. Establece dónde comienza o empieza a tener efecto el elemento.
+2.  **La etiqueta de cierre**: es igual que la etiqueta de apertura, excepto que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde termina el elemento.
+3.  **El contenido**: este es el contenido del elemento.
+4.  **El elemento**: la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale al elemento.
+
+Un elemento puede tener uno o muchos atributos para caracterizar o definir parte del comportamiento de cada uno, o para agregar identificadores entre otros, los atributos siempre deben tener:
+
+1.  Un espacio entre este y el nombre del elemento (o del atributo previo, si el elemento ya posee uno o más atributos).
+2.  El nombre del atributo, seguido por un signo de igual (**=**).
+3.  Comillas de apertura y de cierre, encerrando el valor del atributo.
+
+Los atributos siempre se incluyen en la etiqueta de apertura de un elemento, nunca en la de cierre.
+
+## Elementos básicos de HTML:
+
+Los elementos de HTML los podemos agrupar según su intencionalidad en 5 grandes grupos, elementos semánticos, de multimedia, de cabecera, de formularios y de scripting; a continuación describiremos cada uno de estos:
+
+### Semánticos:
+
+En esta agrupación encontramos aquellos elementos que le pueden llegar a dar significado a los textos que queremos transmitir, al igual que funcionalidad para inducir alguna acción en los usuarios y a su vez podemos subdividirlo en 5 grupos así:
+
+1.  **De texto**: Permiten dotar de un significado especial al contenido como por ejemplo.
+
+| **Elemento** | **Descripción**                                                               |
+| ------------ | ----------------------------------------------------------------------------- |
+| `<strong>`   | Fragmento de texto **importante** o **palabras clave**                        |
+| `<em>`       | Fragmento de texto _enfatizado_ respecto a la frase que lo contiene.          |
+| `<mark>`     | Fragmento de texto resaltado, simulando estar marcado con rotulador amarillo. |
+| `<i>`        | Fragmento de texto con voz o tono alternativo al resto.                       |
+| `<b>`        | Fragmento de texto sin importancia destacable (_fines utilitarios_).          |
+| `<u>`        | Fragmento de texto para nombres propios o escritura incorrecta intencionada.  |
+
+Los anteriores son solo algunos ejemplos de los elementos de texto que existen en el lenguaje, puedes ampliar tu conocimiento consultando [aquí](https://developer.mozilla.org/es/docs/Web/HTML/Element)
+
+2.  **De agrupación**: se utilizan para agrupar y organizar información, veamos algunos ejemplos:
+
+| **Elemento** | **Descripción**                                                  |
+| ------------ | ---------------------------------------------------------------- |
+| `<div>`      | Capa o división utilizada para agrupar varias etiquetas HTML.    |
+| `<p>`        | Define un párrafo de texto.                                      |
+| `<pre>`      | Establece un texto pre formateado.                               |
+| `<ul>`       | Define una lista sin orden. Se trata de la etiqueta contenedora. |
+| `<ol>`       | Define una lista numerada (con orden). Etiqueta contenedora.     |
+| `<li>`       | Define el elemento de una lista.                                 |
+
+3.  **Enlaces o hipervínculos**: La idea es establecer una referencia a una dirección o URL donde está alojado ese otro documento de destino, que puede ser una página web, un archivo PDF, una imagen o cualquier otro tipo de documento. Para este caso tenemos el elemento `<a>`
+4.  **De sección**: En versiones anteriores a HTML 5 utilizábamos el elemento de agrupación `<div>` en con junto con sus atributos para definir secciones de las páginas web como podemos ver a
+
+continuación:
+
+    <div class="articulo">
+      <h1>Título del artículo</h1>
+      <p class="intro">Pequeña introducción.</p>
+      <p class="contenido">Aquí va el texto del artículo en cuestión con sus detalles.</p>
+      <p class="pie">Escrito por Manz</p>
+    </div>>
+
+con la introducción de los elementos de sección podemos escribir de una manera semánticamente más clara lo anterior de la siguiente forma:
+
+    <article>
+        <header>
+    	    <h1>Título del artículo</h1>
+    	    <p class="intro">Pequeña introducción.</p>
+    	</header>
+    	<p class="contenido">Aquí va el texto del artículo en cuestión con sus detalles.</p>
+    	<footer>
+    	    <p>Escrito por Manz.</p>
+    	</footer>
+    </article>
+
+De esta forma, preparamos nuestro documento HTML para que cualquier navegador, robot de buscador o aplicación o sistema informático sea capaz de leer el documento HTML y conocer perfectamente la naturaleza del contenido de dicha sección.
+
+5.  **De tablas**: son una forma sencilla de mostrar datos claramente. Además, si se construyen de forma semántica y correctamente, es muy sencillo darle estilos desde CSS y cambiar su diseño con unas cuantas propiedades, puesto que mediante las etiquetas que la componen se puede hacer referencia a cada parte de la misma, a continuación los elementos básicos:
+
+| **Elemento** | **Descripción**                                                   |
+| ------------ | ----------------------------------------------------------------- |
+| `<table>`    | Capa o división utilizada para agrupar varias etiquetas HTML.     |
+| `<tr>`       | **Table Row**. Etiqueta contenedora de cada fila de la tabla.     |
+| `<td>`       | **Table Data**. Cada una de las celdas de la tabla.               |
+| `<th>`       | **Table Header**. Cada una de las celdas de cabecera de la tabla. |
+
+### De multimedia:
+
+En esta agrupación encontramos aquellos elementos que nos permiten cargar contenido de multimedia a las paginas web como lo pueden ser imágenes, videos, audios, subtítulos, embebidos de otros sitios, entre otros, a continuación describimos algunas de ellas:
+
+1.  Para imágenes `<img>`: si la imagen pertenece al contenido y tema tratado en esa página, debería incluirse mediante una etiqueta HTML `<img>` un ejemplo básico puede ser `<img src="https://lenguajehtml.com/img/logo.png" alt="Logotipo de HTML5" width="400" height="453" />`
+    en la versión 5.1 se incluyen los elementos `<picture> y <source>` que le dan una gran versatilidad a la carga de imágenes permitiendo definir múltiples source para que dependiendo del navegador seleccione el que más se adapte al mismo.
+    Los atributos del elemento `<img>` son:
+    `src` Indica el nombre o la URL de la imagen a mostrar. **Atributo obligatorio**.
+    `alt` Establece un texto alternativo que describa la imagen a mostrar. **Atributo obligatorio**.
+    `width`Indica el ancho de la imagen en píxels (sin la unidad). Se puede hacer desde CSS.
+    `height`Indica el alto de la imagen en píxels (sin la unidad). Se puede hacer desde CSS.
+2.  Para contenido externo: Las siguientes etiquetas sirven para incrustar contenido externo:
+    `<iframe>`- Permite incrustar contenido externo en «vivo», sus atributos son los siguientes `src`, `srcdoc`, `name`, `width`, `height`.
+    `<embed>`- Permite incrustar contenido interactivo, sus atributos son los siguientes `src`, `type`, `width`, `height`
+    `<object>`- Permite incrustar contenido externo con fallbacks, sus atributos son los siguientes `data`, `type`, `name`, `form`, `width`, `height`
+    `<param>`- Define parámetros de un elemento `<object>`, sus atributos son `name`, `value`
+3.  Para video `<video>`: En HTML5 se introduce la interesante posibilidad de **mostrar videos directamente** desde nuestro navegador. De hecho, si arrastramos un video a la ventana del navegador, veremos que comienza a reproducirse en él. Para poder insertar videos en nuestras páginas HTML tenemos que utilizar la etiqueta `<video>`, que junto a la etiqueta `<source>` podremos utilizar estas capacidades multimedia de HTML5.
+    los atributos del elemento video son los siguientes:
+    `src` _Dirección URL_ del Video a reproducir. Obligatoria si actúa como etiqueta contenedora.
+    `poster` _Dirección URL_ de una imagen de muestra a modo de presentación.
+    `preload` **auto** | `metadata` | `none`, Indica como realizar la precarga del video.
+    `mediagroup`_nombre_, Establece un nombre para un grupo de contenidos multimedia.
+    `autoplay`Comienza a reproducir el video automáticamente.
+    `loop`Vuelve a iniciar el video cuando finaliza su reproducción (bucle).
+    `muted`Establece el video sin sonido (silenciado).
+    `controls`Muestra los controles de reproducción. Por defecto no se muestran.
+    `width`_tamaño_ Indica el tamaño de ancho del video.
+    `height`_tamaño_ Indica el tamaño de alto del video.
+    Un ejemplo puede ser `<video src="video.mp4" width="640" height="480"></video>`
+4.  Para audio: En este caso, utilizaremos la etiqueta `<audio>` que funciona exactamente igual que `<video>`, pero con relación a archivos de audio. los atributos del elemento son:
+    `src`_Dirección URL_del audio a reproducir. Obligatoria si actúa como etiqueta contenedora.
+    `preload`**auto** | `metadata` | none, Indica como realizar la precarga del audio.
+    `mediagroup`\_nombre_, Establece un nombre para un grupo de contenidos multimedia.
+    `autoplay` Comienza a reproducir el audio automáticamente.
+    `loop`Vuelve a iniciar el audio cuando finaliza su reproducción (bucle).
+    `muted`Establece el audio sin sonido (silenciado).
+    `controls`Muestra los controles de reproducción. Por defecto no se muestran.
+    Un ejemplo puede ser `<audio src="audio.mp3" preload="none" controls></audio`.
+
+### De cabecera:
+
+Hay dos etiquetas HTML principales: la cabecera de la página o `<head>` y el cuerpo de la página o `<body>` . El primero de ellos, del que hablaremos en este apartado, se encarga de contener **etiquetas de metadatos** (_información sobre el documento_) así como establecer **relaciones con otros documentos**. Existen varios elementos a utilizar en la cabecera y los listamos a continuación:
+`<title>`Título de la página (pestaña o título del navegador o en buscadores).
+`<base>`- URL base del documento (_usado para gestionar rutas relativas_), sus atributos son `href`, `target`.
+`<link>`- Establece una relación del documento actual con otro externo, sus atributos son `href`, `hreflang`, `rel`, `media`, `type`.
+`<meta>`- Establece un metadato específico en el documento actual, sus atributos son `name`, `content`, `http-equiv`, `charset`.
+`<style>` Crea estilos CSS que afectarán únicamente al documento actual, sus atributos son `media`, `type`.
+`<script>` Indica un script a cargar o ejecutar en la página actual, sus atributos son `src`, `type`, `charset`, `async`, `defer`.
+
+La etiqueta con mayor número de posibilidades en la cabecera de un documento HTML es la etiqueta `<meta>`. En ella, y a través de los atributos **name** y **content** podemos indicar una gran cantidad de metadatos al documento. Veamos los más conocidos:
+`description`_texto_,Indica la descripción de la página que aparece en buscadores.
+`keywords`_palabras clave_, Lista de palabras clave separadas por comas. Google no la tiene en cuenta.
+`author`_nombre_, Indica el nombre del autor de la página.
+`language`_idioma_, [Código ISO 639-1](https://es.wikipedia.org/wiki/ISO_639-1) del idioma del documento HTML.
+`generator`_software_, Indica el software utilizado para crear la página web.
+`theme-color`_color_,[Color en formato hexadecimal](https://lenguajecss.com/css/colores-y-fondos/colores-css/) de la barra de navegación del navegador.
+`viewport`_parámetros_, Comportamiento de la región visible del navegador.
+
+Al igual que vimos como establecer un título y descripción para un documento HTML, es posible definir una serie de **etiquetas de metadatos** orientadas a **redes sociales** como Facebook o Twitter. De esta forma, al margen de los datos del documento HTML, podemos indicar títulos o descripciones diferentes, orientadas al público de cada red social como lo son [Open Graph](http://ogp.me/) y [Twitter Cards](https://dev.twitter.com/cards/overview)
+
+### De formularios:
+
+HTML5 proporciona una serie de etiquetas interesantes para utilizar en formularios (_además de las ya existentes en versiones anteriores_). Los **formularios** son una forma sencilla de establecer mecanismos para que el usuario pueda introducir información en una página web de forma sencilla e intuitiva, y el sitio web sea capaz de procesarla correctamente y añadirla en una base de datos de la página, enviarla por email o procesarla para mostrar información final al usuario.
+
+Nuestros **objetivos al crear un formulario** HTML5 deben ser los siguientes:
+
+- Hacer lo más **sencillo** posible el proceso de inserción de datos por parte del usuario.
+- Intentar que la experiencia de usuario sea lo más **agradable** posible.
+- Intentar que los datos introducidos estén en un **formato predecible** y esperado.
+- Reducir los errores al introducir datos en la medida de lo posible.
+- Comunicar claramente si ocurren errores al introducir datos.
+
+Para comenzar con la creación de un formulario, el primer paso es indicar una etiqueta contenedora `<form>`, que incluirá toda la información que se quiere recoger en ese formulario.
+
+La etiqueta `<form>` dispone de varios **atributos** para utilizar:
+`action` - _URL_, Dirección URL del back-end donde se enviará la información del formulario.
+`method`- **get** | `post`, Método HTTP de envío. `GET` a través de URL, `POST` para envío extenso.
+`name`-_nombre_. Nombre del formulario. Útil para procesar posteriormente.
+`target`-_destino_,Nombre del lugar donde se abrirá el formulario. `\_blank` para nueva pestaña.
+`enctype`-_tipo_,Codificación para el envío del formulario. Importante para envío de archivos.
+`accept-charset`-_codificación_, Fuerza a utilizar una codificación en los parámetros de texto del formulario.
+`autocomplete`-**on** | `off`,Activa o desactiva el autocompletado para todos los campos del formulario.
+`novalidate`Con este atributo presente, el formulario obvia la validación HTML5.
+Un ejemplo de un primer contener de formulario podría ser `<form name="formulario" method="post" action="/send.php"></form>`.
+Para camputar información en los formularios HTML nos provee un elemento en particular para cada tipo, a continuación listamos algunos de gran utilidad:
+| **Elemento** | **Ejemplo**| **Información a obtener**|
+| --- | --- | -- |
+| `<input>` `<textarea>` | Nombres, apellidos, direcciones físicas... | Información de texto |
+| `<input>` para números | Edades, precios, cuantías... | Números o cantidades |
+| `<input>` para fechas | Fecha de nacimiento, inicio de evento... | Fechas u horas |
+| `<input type="checkbox">` | Si/No, Opción A/B, ON/OFF... | Verdadero/falso|
+| `<input type="radio"><select>` | (Elegir una opción de 2 ó más posibles)| Opción única|
+| `<select multiple><input type="checkbox">` | (Elegir varias opciones de 2 ó más posibles)| Varias opciones|
+| `<datalist>` | (Elegir una opción o indicar una propia)| Opción única abierta|
+| `<input type="color">` | (Escoger un color o tonalidad)| Selección de color|
+| `<input type="file">` | (Escoger un archivo para enviar)| Selección de archivo|

@@ -12,4 +12,12 @@ A continuación te presentamos un ejemplo del album que debes crear:
 
 ![homework_2](./homework_album.png)
 
-Trabajar en parejas 
+Trabajar en parejas:
+
+Mauricio Bonilla - Juliana Gomez  (Study Room 1)
+Wilmer Gonzales - Carlos Cortes (Study Room 2)
+Jhon Lopez - Edison Escobar (Study Room 3)
+Mayerly Morales - Jonathan Suarez - Juan Cubullos (Study Room 4)
+Daniel Romero (Study Room 5)
+Luisa Pachon (Study Room 6)
+

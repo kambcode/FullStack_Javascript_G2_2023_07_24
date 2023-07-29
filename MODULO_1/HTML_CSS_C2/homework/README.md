@@ -13,6 +13,9 @@ A continuación te presentamos un ejemplo del album que debes crear:
 
 ![homework_2](./homework_album.png)
 
+3. *Tarea Extra:* Replicar el siguiente carusel de noticias usando tablas (individual)
+![homework_3](./tarea_extra.png)
+
 Trabajar en parejas:
 
 - Mauricio Bonilla - Juliana Gomez  (Study Room 1)

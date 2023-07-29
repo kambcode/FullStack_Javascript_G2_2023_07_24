@@ -7,6 +7,8 @@ Antes de empezar puedes configurar tu setup inicial de forma muy sencilla para p
 - Crea una cuenta en **GitHub** para poder tener acceso al repositorio de la clase (https://github.com/)
 - Configura Visual Studio Code para que se conecte a tu cuenta de GitHub y ahora clona nuestro proyecto de clase
 
+**IMPORTANTE:** La url que debes clonar es: https://github.com/kambcode/FullStack_Javascript_G2_2023_07_24
+
 ![image](https://github.com/KamiloMontoya/kambcode_g1/assets/11945476/e1ae4282-8cee-403b-9f66-7fb9af62241d)
 ![image](https://github.com/KamiloMontoya/kambcode_g1/assets/11945476/ca0ce2ad-72ec-431d-b3e1-55b84c64ec13)
 

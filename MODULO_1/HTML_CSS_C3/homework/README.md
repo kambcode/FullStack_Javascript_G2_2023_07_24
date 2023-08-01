@@ -24,3 +24,13 @@ En la generación de estilos hay infinitas maneras de llegar a un mismo resultad
    - Los botones deben tener un borde solid  de 2px y de color `#9CA6FF`
    - El botón "Register" debe tener un color de fondo  `#8B54FF`
    - ![tarea2](./../resources/homework_dark.jpeg)
+
+## Trabajar en parejas:
+
+- Mauricio Bonilla - Jhon Lopez (Study Room 1)
+- Juliana Gomez - Carlos Cortes (Study Room 2)
+- Juan Cubillos - Edison Escobar (Study Room 3)
+- Mayerly Morales - Wilmer Gonzales (Study Room 4)
+- Jonathan Suarez - Jose Daniel Bocanegra (Study Room 5)
+- Daniel Romero (Study Room 6)
+- Luisa Pachon (Study Room 7)

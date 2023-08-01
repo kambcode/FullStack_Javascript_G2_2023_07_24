@@ -21,3 +21,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 24/07/2023 - Fundamentos de HTML https://youtu.be/f8IT_YoU8fQ
  - 26/07/2023 - Formularios y tablas en html https://youtu.be/7zCrWaE77ac
  - 28/07/2023 - Tablas combiandas html https://www.youtube.com/watch?v=tNfjbPJcWvA
+ - 31/07/2023 - Introduccion a CSS https://youtu.be/eRe37cBQlFk

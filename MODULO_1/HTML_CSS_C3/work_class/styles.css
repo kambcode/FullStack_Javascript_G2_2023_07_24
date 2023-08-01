@@ -1,0 +1,45 @@
+body  {
+    background-color: lightgreen;
+}
+h1 {
+    color:red;
+    text-decoration: underline;
+}
+
+h2 {
+    /* color de fondo */
+    background-color: yellow;
+    /* color de fuente */
+    color: green;
+}
+
+p {
+    color: blue;
+    /* tamaño de fuente */
+    font-size: 36px;
+    /* tipo de fuente */
+    font-family: Arial;
+}
+
+span {
+    color:   #215511;
+    /* Ancho de la fuente (nivel de negrita) */
+    font-weight: 900;
+}
+
+button {
+    /* Color de borde */
+    border-color: red;
+    /* ancho del borde */
+    border-width: 2px;
+
+    /* border redondeado */
+    border-radius: 20px;
+}
+
+input {
+    border-color: blue;
+    border-width: 3px;
+    /* Ancho del input */
+    width: 350px;
+}

@@ -1,0 +1,55 @@
+/* input {
+    border-width: 3px;
+    border-color: red;
+    color: black;
+} */
+
+.subtitle {
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+
+.background-green {
+    background-color: green;
+}
+
+.border-yellow {
+    border: 4px solid yellow;
+    /* border-style: solid;
+    border-color: yellow;
+    border-width: 2px; */
+}
+
+.border-red {
+    border-color: red;
+    border-width: 2px;
+}
+
+.input-name {
+    border: 2px solid slateblue;
+    background-color: aqua;
+    font-size: 20px;
+    color: red;
+}
+
+.input-name::placeholder {
+    color: blue;
+}
+
+.button-blue {
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: 200px;
+}
+
+.button-blue:hover {
+    /* Estos estilos solo aplican 
+    si paso el mouse por el elemento */
+    background-color: aqua;
+}
+
+

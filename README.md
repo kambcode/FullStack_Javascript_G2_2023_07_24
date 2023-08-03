@@ -22,3 +22,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 26/07/2023 - Formularios y tablas en html https://youtu.be/7zCrWaE77ac
  - 28/07/2023 - Tablas combiandas html https://www.youtube.com/watch?v=tNfjbPJcWvA
  - 31/07/2023 - Introduccion a CSS https://youtu.be/eRe37cBQlFk
+ - 02/08/2023 - Selectores CSS y Modelo de cajas https://youtu.be/IRO2T77ylrw

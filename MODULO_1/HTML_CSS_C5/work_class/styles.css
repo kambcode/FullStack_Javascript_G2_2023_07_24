@@ -1,0 +1,43 @@
+.box {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.flex-container {
+    background-color: aqua;
+    display: flex;
+}
+
+.flex-container-end {
+    background-color: aqua;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container-center {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.flex-container-around {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-container-between {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-container-wrap {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+}

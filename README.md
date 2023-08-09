@@ -24,3 +24,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 31/07/2023 - Introduccion a CSS https://youtu.be/eRe37cBQlFk
  - 02/08/2023 - Selectores CSS y Modelo de cajas https://youtu.be/IRO2T77ylrw
  - 04/08/2023 - Modelo de cajas, imagenes de fondo y ejercicios prácticos https://youtu.be/1yhk0_b2FVE
+ - 08/08/2023 - Display flex, justify-content, flex direction y flex wrap https://youtu.be/_vHV0LydI9k

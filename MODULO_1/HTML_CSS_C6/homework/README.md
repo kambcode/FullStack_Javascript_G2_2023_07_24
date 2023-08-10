@@ -9,7 +9,7 @@ Las tareas de los módulos son pensadas para profundizar en los temas expuestos 
     - Evita usar margin y padding para separar los elementos en su lugar usa flex-direction, justify-content, align-items, y gap
     - El contendor de usurios debe tener al menos 8 usuarios, pero unicamente deben aparecer 4 usuarios y se debe permitir hacer scroll para ver los demás. Para ello te recomendamos asignaler un alto (`height`) fijo al contendor de usuarios y utilizar la propiedad `overflow-y: scroll;`
     - ![tarea1](./../resources/flex-homework2.png)
-    - ![Flex_video.webm](https://github.com/kambcode/FullStack_Javascript_G2_2023_07_24/assets/98411921/78ffea98-778f-4fa8-bae1-a0873b48581a)
+    - Video demo: ![Flex_video.webm](https://github.com/kambcode/FullStack_Javascript_G2_2023_07_24/assets/98411921/78ffea98-778f-4fa8-bae1-a0873b48581a)
 
 ## Trabajar en parejas:
 

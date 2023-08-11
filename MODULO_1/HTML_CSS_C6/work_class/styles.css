@@ -1,0 +1,27 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.flex-container {
+    height: 250px;
+    background-color: aquamarine;
+    display: flex;
+    gap: 10px;
+    /* Por defecto el flujo es row */
+    /* flex-direction: row; */
+    justify-content: end;
+    align-items: center;
+}
+
+.flex-contianer-col {
+    height: 600px;
+    background-color: aquamarine;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}

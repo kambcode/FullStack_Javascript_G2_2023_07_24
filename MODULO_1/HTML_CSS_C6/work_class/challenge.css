@@ -1,0 +1,56 @@
+body {
+    background-image: url('./resources/background.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: white;
+    width: 900px;
+}
+
+.shoping-icon {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.line {
+    border: 1px solid black;
+}
+
+.shop-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px
+}
+
+.title-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.title-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

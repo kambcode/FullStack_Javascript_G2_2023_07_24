@@ -7,7 +7,7 @@ Las tareas de los módulos son pensadas para profundizar en los temas expuestos 
 1. Replica la siguiente tarjeta usando flexbox:
     - La tarjeta debe tener un ancho de `300px` y estar centrada en el body vertica y horizontalemente. No olvides usar la propiedad `min-height: 100vh` en el body.
     - Para separar los elementos en flex-direction, justify-content, align-items, y gap (evita usar margin siempre que sea posible)
-    - El contendor de usurios debe tener al menos 8 usuarios, pero unicamente deben aparecer 4 usuarios y se debe permitir hacer scroll para ver los demás. Para ello te recomendamos asignaler un alto (`height`) fijo al contendor de usuarios y utilizar la propiedad `overflow-y: scroll;`
+    - *Plus*: El contendor de usurios debe tener al menos 8 usuarios, pero unicamente deben aparecer 4 usuarios y se debe permitir hacer scroll para ver los demás. Para ello te recomendamos asignaler un alto (`height`) fijo al contendor de usuarios y utilizar la propiedad `overflow-y: scroll;`
     - ![tarea1](./../resources/flex-homework2.png)
     - Video demo: ![Flex_video.webm](https://github.com/kambcode/FullStack_Javascript_G2_2023_07_24/assets/98411921/78ffea98-778f-4fa8-bae1-a0873b48581a)
 

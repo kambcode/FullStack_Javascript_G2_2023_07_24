@@ -16,7 +16,17 @@ Aplica los estilos dados según las condiciones especificadas de manera de llega
 
    - ![Tarea4](./../resources/TAREA_4.webp)
 
-3. Tarea final de Grid, utilizando CSS grid desarrolla la siguiente layout
+4. Tarea final de Grid, utilizando CSS grid desarrolla la siguiente layout
 
    - ![Tarea3](./../resources/Tarea3.png)
+
+## Trabajar en parejas:
+
+- Mayerly Morales - Carlos Cortes (Study Room 1)
+- Edison Escobar - Wilmer Gonzales - Jonathan Suarez (Study Room 2)
+- Jhon Lopez - Juliana Gomez (Study Room 3)
+- Daniel Romero (Study Room 4)
+- Mauricio Bonilla - Jose Daniel Bocanegra (Study Room 5)
+
+
 

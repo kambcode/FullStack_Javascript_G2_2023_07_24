@@ -1,4 +1,3 @@
-
 ## Grid View
 
 Grid view es otra alternativa para trabajar el layout de nuestras aplicaciones, esta se basa en una malla de dos dimensiones, al igual que flexbox esta tiene propiedades para un elemento padre o el también llamado contenedor y para sus elementos hijos o llamados ítems.

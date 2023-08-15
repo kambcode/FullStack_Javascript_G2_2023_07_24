@@ -1,0 +1,43 @@
+body {
+    font-size: 34px;
+    font-weight: 900;
+}
+
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 200px 1fr 10%;
+    grid-template-rows: 50px 1fr 100px;
+    /* gap: 20px; */
+    grid-template-areas: 
+        "myHeader myHeader  myHeader   myHeader"
+        ".        myMenu    contenido  ."
+        ".        myMenu    myFooter   .";
+}
+
+.header {
+    background-color: yellow;
+    grid-area: myHeader;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.menu {
+    background-color: aqua;
+    grid-area: myMenu;
+}
+.content {
+    background-color: lightgreen;
+    grid-area: contenido;
+
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: burlywood;
+    grid-area: myFooter;
+}

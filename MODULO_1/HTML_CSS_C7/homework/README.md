@@ -12,6 +12,10 @@ Aplica los estilos dados según las condiciones especificadas de manera de llega
 
    - ![Tarea2](./../resources/Tarea2.png)
 
+3. Usando CSS grid áreas desarrolla la siguiente layout
+
+   - ![Tarea4](./../resources/TAREA_4.webp)
+
 3. Tarea final de Grid, utilizando CSS grid desarrolla la siguiente layout
 
    - ![Tarea3](./../resources/Tarea3.png)

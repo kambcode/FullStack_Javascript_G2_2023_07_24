@@ -14,7 +14,7 @@ Aplica los estilos dados según las condiciones especificadas de manera de llega
    - Recuerda usar el patrón de diseño `mobile first` (Primero genera el comportamiento para mobile y depues si ajustalo para pantallas mas grandes). Además utiliza 720px como breakpoint
 
 2. Ahora vamos a replicar el banner principal de la página de kambcode, para ello crea un componente que en escritorio se vea de la siguiente forma 
-  - ![desktop.png](./../resources/kambcode_landing_desktop.png)
+   - ![desktop.png](./../resources/kambcode_landing_desktop.png)
 
    - y en versiones de tablet y celular (es decir en pantallas con un ancho menor a 1280px) se vea así: ![mobile.png](./../resources/kambcode_landing_mobile.png)
 

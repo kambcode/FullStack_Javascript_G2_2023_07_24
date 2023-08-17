@@ -25,4 +25,5 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 04/08/2023 - Modelo de cajas, imagenes de fondo y ejercicios prácticos https://youtu.be/1yhk0_b2FVE
  - 08/08/2023 - Display flex, justify-content, flex direction y flex wrap https://youtu.be/_vHV0LydI9k
  - 10/08/2023 - flekbox, gap, align-items y ejercicios prácticos https://youtu.be/7FfSx-V-UsA
- - 10/08/2023 - CSS Grid View https://youtu.be/awEnybDCaL4
+ - 14/08/2023 - CSS Grid View https://youtu.be/awEnybDCaL4
+ - 16/08/2023 - CSS Grid vs Flex https://youtu.be/qq0is6HJkwQ

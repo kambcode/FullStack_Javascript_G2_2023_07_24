@@ -20,6 +20,8 @@ Aplica los estilos dados según las condiciones especificadas de manera de llega
 
    - Nota que no solo cambia el color de la fuente entre una version y otra, sino que todos los textos tambien se ven más pequeños en la versión mobile, al igual que el logo de kambcode tambien es diferente.
 
+   - Recuerda que puedes ocultar un elemento de el HTML con la propiedad `display: none;` y hacerlo visible nuevamente con `display: block;`
+
 A continuación encontrarás las URL de las imágenes que vas a necesitar para desarollar esta tarea:
 
 - Logo a color: https://www.kambcodelatam.com/_next/static/media/logo_small.2e076dcb.svg

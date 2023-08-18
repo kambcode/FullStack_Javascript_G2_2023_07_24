@@ -1,0 +1,54 @@
+.main-title {
+    color: red;
+}
+.image {
+    border: 2px solid black;
+    width: 600px;
+}
+
+button {
+    background-color: aqua;
+    font-size: 24px;
+    padding: 10px 30px 10px 30px;
+}
+
+@media (max-width: 850px) {
+    /* 
+    Los siguientes estilos solo 
+    van a aplicar para pantallas 
+    con un ancho 
+    entre 0px y 850px, 
+    es decir dispositivos moviles 
+    */
+    .main-title {
+        color: green;
+        font-size: 16px;
+    } 
+
+    .image {
+        width: 200px;
+        margin-left: 100px;
+    }
+
+    button {
+        display: none;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 1200px) {
+    /* 
+        Los siguientes estilos solo van a aplicar
+        para pantallas con un ancho entre 850px y 1200px,
+        es decir dispositivos moviles 
+    */
+    .main-title {
+        color: yellow;
+    }
+}
+
+/* @media <TIPO> and (<VALOR-1>) and (<VALOR-2>) */
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    .main-title {
+        color: yellow;
+    }  
+}

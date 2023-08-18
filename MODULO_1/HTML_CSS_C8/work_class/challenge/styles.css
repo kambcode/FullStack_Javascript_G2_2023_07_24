@@ -1,0 +1,14 @@
+.menu  {
+    background-color: gray;
+    display: flex;
+}
+
+.menu-item {
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.menu-item:hover {
+    background-color: red;
+}

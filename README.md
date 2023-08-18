@@ -27,3 +27,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 10/08/2023 - flekbox, gap, align-items y ejercicios prácticos https://youtu.be/7FfSx-V-UsA
  - 14/08/2023 - CSS Grid View https://youtu.be/awEnybDCaL4
  - 16/08/2023 - CSS Grid vs Flex https://youtu.be/qq0is6HJkwQ
+ - 17/08/2023 - Media Queries https://youtu.be/TWz6KBryswU

@@ -23,7 +23,7 @@ En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `
 
 En su lugar de usar anchos de columna fijos piensa en porcentajes o columnas de grid que midan fracciones del espacio disponible ejemplo 0.3fr, 0.5fr o 1fr o automáticos `auto` y en contenedores flexibles con `flex-wrap`. 
 
-Recuerda que `auto` toma un tamañano automático que se agrandará más o menos dependiendo de el contenido del área, te sera muy util para definir el alto de las filas puedes usarlo por ejemplo para definir el alto de la filas que contienen la secciones de "Perfil" y "My Skills", las demás filas si pueden tener un ancho fijo en pixeles.
+Recuerda que `auto` a diferencia de `fr` toma un tamañano automático que se agrandará más o menos dependiendo de el contenido del área, te sera muy util para definir el alto de las filas puedes usarlo por ejemplo para definir el alto de la filas que contienen la secciones de "Perfil" y "My Skills", las demás filas si pueden tener un ancho fijo en pixeles.
 
 ## Recursos necesarios para el desarrollo
 

@@ -30,7 +30,7 @@ En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `
       <title> Portfolio </title>
       <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet"/>
       <!-- Despues de importar la fuente si puedes incluir tus hojas de estilos -->
-      <link href="./my_css_styles" rel="stylesheet">
+      <link href="<TU_HOJA_DE_ESTILOS_CSS>" rel="stylesheet">
    </head>
 ```
 3. Los colores de fuente del titulo son `#21243D` y `#E01E5A`;

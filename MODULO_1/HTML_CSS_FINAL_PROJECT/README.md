@@ -19,7 +19,7 @@ En el siguiente enlace de figma ( [enlace al diseño propuesto del portafolio](h
 
 ## IMPORTANTE
 
-En figma puedes encontar propiedades como `font-size`, `color`, `font-weight` entre otras,  que te serán muy útiles. Pero tambien vas a encontar propiedades relacionadas con `flex-grow` y `width` que te vana  causar muchos problemas, esto pasa por que el diseño de figma esta pensado para un tamaño especifico de pantalla en desktop, por lo tanto desde el principio **NO uses los atributos `width` que figma te propone** porque vas a tener problemas para hacer tu pagina responsive, en su lugar piensa en columnas de grid que midan 1fr y en contenedores flexibles con `flex-wrap`.
+En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `line-height` entre otras,  que te serán muy útiles. Pero tambien vas a encontar propiedades relacionadas con  `width` que te van a  causar muchos problemas, esto pasa por que el diseño de figma esta pensado para un tamaño especifico de pantalla en desktop (1152px), por lo tanto desde el principio **NO uses los atributos `width` que figma te propone** porque vas a tener problemas para hacer tu pagina responsive, en su lugar piensa en porcentajes o columnas de grid que midan fracciones del espacio disponible (1fr) y en contenedores flexibles con `flex-wrap`.
 
 ## Recursos necesarios para el desarollo
 

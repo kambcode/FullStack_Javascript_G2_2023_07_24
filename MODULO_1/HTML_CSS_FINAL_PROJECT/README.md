@@ -11,7 +11,7 @@ En el siguiente enlace de figma ( [enlace al diseño propuesto del portafolio](h
    1. El desarollo debe ser lo más fiel posible al diseño, utiliza los mismo colores, tipos de fuente, tamaños de fuente.
    2. Debe ser responsive, en el diseño de figma encontrarás el diseño en version de escritorio y celulares (tu desarollo debe verse exactamente lo más parecido posible diseño), para tamaños de pantalla intermedios como tabletas deberás utilizar el mismo diseño mobile, puedes usar 1080px como breakpoint para el diseño mobile (max-width: 1080px)
    3. Limita al máximo el uso de `media queries`, piensa en contenedores hechos con `flexbox` y `flex-wrap` que se ajusten autmáticamente.
-   4.  Utilizar `gridview` para definir el layout de tu página y `flexbox` para crear el contenido dentro de cada sección o área del layout
+   4.  Utilizar `grid view` para definir el layout de tu página y `flexbox` para crear el contenido dentro de cada sección o área del layout
    5. Te recomendamos pensar en un grid con 3 columnas por 6 filas como lo muestra la imágen. El contenido interno de cada área lo puedes ubicar usando flexbox
    
    <img src="./final_project_columns.png"  width="230px" height="auto">

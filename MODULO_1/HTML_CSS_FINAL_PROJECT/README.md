@@ -33,7 +33,6 @@ En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `
       <link href="./my_css_styles" rel="stylesheet">
    </head>
 ```
-  -
 3. Los colores de fuente del titulo son `#21243D` y `#E01E5A`;
 4. El color de fuente de la sección "My Skills" es `#EDF7FA`;
 5. Recuerda que puedes encontrar los tamaños de fuente (font-size) y propiedades como font-weight y line-height en el diseño de Figma.

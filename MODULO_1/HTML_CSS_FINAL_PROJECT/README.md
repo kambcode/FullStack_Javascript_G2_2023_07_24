@@ -13,13 +13,17 @@ En el siguiente enlace de figma ( [enlace al diseño propuesto del portafolio](h
    3. Limita al máximo el uso de `media queries`, piensa en contenedores hechos con `flexbox` y `flex-wrap` que se ajusten autmáticamente.
    4.  Utilizar `gridview` para definir el layout de tu página y `flexbox` para crear el contenido dentro de cada sección o área del layout
    5. Te recomendamos pensar en un grid con 3 columnas por 6 filas como lo muestra la imágen. El contenido interno de cada área lo puedes ubicar usando flexbox
-
+   
    <img src="./final_project_columns.png"  width="230px" height="auto">
    <img src="./final_project_areas.png"  width="222px" height="auto">
 
 ## IMPORTANTE
 
-En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `line-height` entre otras,  que te serán muy útiles. Pero tambien vas a encontar propiedades relacionadas con  `width` que te van a  causar muchos problemas, esto pasa por que el diseño de figma esta pensado para un tamaño especifico de pantalla en desktop (1152px), por lo tanto desde el principio **NO uses los atributos `width` que figma te propone** porque vas a tener problemas para hacer tu pagina responsive, en su lugar piensa en porcentajes o columnas de grid que midan fracciones del espacio disponible (1fr) y en contenedores flexibles con `flex-wrap`.
+En figma puedes encontar propiedades como `font-size`, `color`, `font-weight`, `line-height` entre otras,  que te serán muy útiles. Pero tambien vas a encontar propiedades relacionadas con  `width` que te van a  causar muchos problemas, esto pasa por que el diseño de figma esta pensado para un tamaño especifico de pantalla en desktop (1152px), por lo tanto desde el principio **NO uses los atributos `width` que figma te propone** porque vas a tener problemas para hacer tu pagina responsive.
+
+En su lugar de usar anchos de columna fijos piensa en porcentajes o columnas de grid que midan fracciones del espacio disponible ejemplo 0.3fr, 0.5fr o 1fr o automáticos `auto` y en contenedores flexibles con `flex-wrap`. 
+
+Recuerda que `auto` toma un tamañano automático que se agrandará más o menos dependiendo de el contenido del área, te sera muy util para definir el alto de las filas puedes usarlo por ejemplo para definir el alto de la filas que contienen la secciones de "Perfil" y "My Skills", las demás filas si pueden tener un ancho fijo en pixeles.
 
 ## Recursos necesarios para el desarrollo
 

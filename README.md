@@ -28,3 +28,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 14/08/2023 - CSS Grid View https://youtu.be/awEnybDCaL4
  - 16/08/2023 - CSS Grid vs Flex https://youtu.be/qq0is6HJkwQ
  - 17/08/2023 - Media Queries https://youtu.be/TWz6KBryswU
+ - 22/08/2023 - Proyecto final y dudas de tareas pasadas https://youtu.be/-3HPxLPM6R8

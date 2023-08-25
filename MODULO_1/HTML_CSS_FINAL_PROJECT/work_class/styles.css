@@ -1,0 +1,75 @@
+body {
+    display: grid;
+    grid-template-columns: 8% 1fr 8%;
+    grid-template-rows: 80px auto 50px auto 50px 100px;
+    grid-template-areas: 
+    "header   header  header"
+    "profile  profile profile"
+    "   .     skills    .  "
+    "blueLeft skills blueRight"
+    "   .     skills    .  "
+    "footer   footer   footer"
+    ;
+}
+
+.header {
+    border: 2px solid black;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+.header-items {
+    display: flex;
+    gap: 20px;
+}
+
+.profile {
+    border: 2px solid black;
+    grid-area: profile;
+}
+.skills {
+    border: 2px solid black;
+    grid-area: skills;
+}
+.blueLeft {
+    background-color: #A3CEDB;
+    grid-area: blueLeft;
+}
+.blueRight {
+    background-color: #A3CEDB;
+    grid-area: blueRight;
+}
+.footer {
+    border: 2px solid black;
+    grid-area: footer;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    /* background-color: #ECECEC; */
+}
+.progress {
+    width: 80%;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+.bar-container {
+    display: flex;
+}
+
+.linea {
+    margin-left: 20px;
+    width: 4px;
+    height: 200px;
+    background-color: red;
+}
+/* En una pantalla de celular se ve azul la linea */
+@media (max-width: 1080px) {
+    .linea{
+        background-color: blue;
+    }
+}

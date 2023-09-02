@@ -1,0 +1,42 @@
+.background-transparent {
+    height: 200px;
+    width: 100%;
+    /* background-color: rgb(68, 88, 158); */
+    background-color: rgba(68, 88, 158, 1);
+}
+
+.background-img {
+    height: 800px;
+    width: 900px;
+    background-image: 
+        url('./logo.svg'), 
+        url('./image.jpeg');
+    background-repeat: no-repeat;
+}
+.background-color {
+    height: 300px;
+    width: 100%;
+    /* background-image: linear-gradient(to top left,red, yellow); */
+    background-image: linear-gradient(180deg, #f74f0c,  #0cf742);
+}
+
+.background-color-img {
+    height: 600px;
+    width: 100%;
+    background-image:
+        linear-gradient(to right,white, rgba(0, 52, 255, 0.5)), 
+        url('./image.jpeg');
+}
+
+.image {
+    height: 600px;
+    width: 100%;
+    background-image:
+        url('./image.jpeg');
+}
+
+.image:hover {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('./image.jpeg');
+}

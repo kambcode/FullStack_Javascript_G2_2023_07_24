@@ -29,3 +29,5 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 16/08/2023 - CSS Grid vs Flex https://youtu.be/qq0is6HJkwQ
  - 17/08/2023 - Media Queries https://youtu.be/TWz6KBryswU
  - 22/08/2023 - Proyecto final y dudas de tareas pasadas https://youtu.be/-3HPxLPM6R8
+ - 24/08/2023 - Dudas proyecto final https://youtu.be/za-gRa1QrfQ
+  - 01/09/2023 - Clase Extra: Gradientes lineales en CSS  https://youtu.be/39drqD6eN5I

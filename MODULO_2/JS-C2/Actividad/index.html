@@ -1,0 +1,26 @@
+<html>
+    <header>
+    </header>
+    <body>
+        <p>Persona 1: Sultano</p>
+        <button onclick="german('31')">Click me</button>
+        <script>
+            // Codigo js
+            // definiendo una variable
+            const person = document.querySelector('p');
+
+            person.addEventListener('click', updateName);
+
+            function updateName() {
+                const name = prompt('Enter a new name');
+                person.textContent = `Player 1: ${name}`;
+            }
+
+            function german (edad) {
+               // alert("Si funciono el codigo" + edad + "años");
+               console.log("Si funciono el codigo" + edad + "años");
+            }
+
+        </script>
+    </body>
+</html>

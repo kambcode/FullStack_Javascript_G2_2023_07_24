@@ -35,4 +35,4 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
 Modulo 2
  - 05/09/2023 - Introduccion al Modulo:  https://youtu.be/5hCNob7NKt0
  - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 1: https://youtu.be/MamZR08ZZ0o
- - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 2: https://youtu.be/MamZR08ZZ0o
+ - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 2: https://youtu.be/Opg8gTEdzE4

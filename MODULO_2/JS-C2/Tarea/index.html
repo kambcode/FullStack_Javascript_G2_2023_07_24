@@ -1,0 +1,33 @@
+<html>
+    <header>
+    </header>
+    <body>
+        <script>
+            let primerNumero = parseFloat(prompt("Porfavor introduce tu primer numero"));
+            let segundoNumero = parseFloat(prompt("Porfavor introduce tu segundo numero"));
+            let operacion = prompt("Porfavor introduce la operacion de calculadora");
+            console.log(operacion)
+            let respuesta = (operacion === "suma") ? (primerNumero +segundoNumero) : "Operacion no valida";
+            console.log(respuesta);
+            setTimeout(()=> {
+                alert("el resultado es: " + respuesta);
+            }, 2000)
+            
+
+        //     console.log("mi primer numero es", primerNumero);
+        //    function absoluto(a) {
+        //         let resultado = (a < 0 )? (a * -1) : (a);
+        //         return resultado;
+        //     }
+        //     console.log("El valor absoluto es: " + absoluto(-5));
+
+        //     function par(number1) {
+        //         let resultado = (number1 % 2 === 0) ? true : false
+        //         return resultado
+        //     }
+
+        //     console.log(par(5));// false
+        //     console.log(par(4));// true
+        </script>
+    </body>
+</html>

@@ -38,3 +38,4 @@ Modulo 2
  - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 2: https://youtu.be/Opg8gTEdzE4
  - 08/09/2023 - C3-JS-Comparadores aritmeticos y logicos https://youtu.be/s2Faoqkq1Zg
  - 11/09/2023 - C4-JS-Arrays y Loops introduccion https://youtu.be/ig0TnsU8qJA
+- 13/09/2023 - C5-JS-Objects y Arrays  https://youtu.be/JVbZ1M7X014

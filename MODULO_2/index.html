@@ -1,0 +1,87 @@
+<html>
+    <header>
+    </header>
+    <body>
+        <script>
+            //// operadores o metodos de JS con arreglos
+
+            const miArray = ["banana", "pera", "mora", "uva", "pera", "kiwi"];
+
+            ///operador filter
+            function filtrado(fruta) {
+                return fruta === "pera"
+            }
+
+            const miArrayResultado = miArray.filter(
+                filtrado
+            );
+
+            console.log(miArray, miArrayResultado);
+
+            function filtradoPorA(fruta) {
+                const frutaArray = fruta.split("");
+                console.log(frutaArray);
+                return frutaArray.includes("i")
+            }
+
+            const miArrayResultadoPorA = miArray.filter(
+                filtradoPorA
+            );
+
+            console.log(miArray, miArrayResultadoPorA);
+
+            const miArrayPorO = miArray.filter((fruta) => fruta.split("").includes("o"))
+
+            console.log(miArrayPorO);
+
+            /// find
+            const elemento = miArray.find((fruta) => fruta === "pera")
+            console.log(elemento);
+
+            // sort
+            const frutasAlfabeticamente = miArray.sort();
+            console.log(frutasAlfabeticamente);
+
+            const exitoMecato = [
+                {nombre: "chocorramo", precio: 2000, categoria: "ponque"},
+                {nombre: "gansito", precio: 1000, categoria: "ponque"},
+                {nombre: "cocacola", precio: 4000, categoria: "bebida"},
+                {nombre: "colombiana", precio: 5000, categoria: "bebida"}
+            ];
+
+            const mecatoOrganizado = exitoMecato.sort(
+                (a,b) => {
+                    return a.precio - b.precio
+                }
+            );
+            console.log(mecatoOrganizado.reverse());
+
+            // some
+            const ages = [3, 10, 18, 20];
+
+            const respuesta = ages.some((age) => age > 18);
+
+            console.log(respuesta);
+
+            // split
+            const parrafo = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+
+            const palabras = parrafo.split("").length;
+            //contamos la cantidad de caracteres con espacios
+            console.log(palabras);
+
+            // replace texto
+
+            const palabras2 = parrafo.replaceAll(" ", "x");
+            console.log(palabras2);
+
+            //el numero de caracteres sin contar espacios
+                
+            const palabras3 = parrafo.replaceAll(" ", "");
+
+            console.log(palabras3.length);
+
+
+        </script>
+    </body>
+</html>

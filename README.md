@@ -39,4 +39,5 @@ Modulo 2
  - 08/09/2023 - C3-JS-Comparadores aritmeticos y logicos https://youtu.be/s2Faoqkq1Zg
  - 11/09/2023 - C4-JS-Arrays y Loops introduccion https://youtu.be/ig0TnsU8qJA
  - 13/09/2023 - C5-JS-Objects y Arrays  https://youtu.be/JVbZ1M7X014
- - 15/09/2023 - C6 -JS Array Methods https://youtu.be/7rhZEdhnGD4
+ - 15/09/2023 - C6-JS Array Methods https://youtu.be/7rhZEdhnGD4
+ - 18/09/2023 - C7-Array Loops Clousure Scope https://youtu.be/fvDO7V-_kTQ

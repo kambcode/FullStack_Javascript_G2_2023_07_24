@@ -41,3 +41,4 @@ Modulo 2
  - 13/09/2023 - C5-JS-Objects y Arrays  https://youtu.be/JVbZ1M7X014
  - 15/09/2023 - C6-JS Array Methods https://youtu.be/7rhZEdhnGD4
  - 18/09/2023 - C7-Array Loops Clousure Scope https://youtu.be/fvDO7V-_kTQ
+ - 20/09/2023 - C8-Clousure, Sincronismo, Asincronismo, CallBacks https://youtu.be/XLg8n1qoqeE

@@ -43,3 +43,4 @@ Modulo 2
  - 18/09/2023 - C7-Array Loops Clousure Scope https://youtu.be/fvDO7V-_kTQ
  - 20/09/2023 - C8-Clousure, Sincronismo, Asincronismo, CallBacks https://youtu.be/XLg8n1qoqeE
  - 25/09/2023 - C9-CalBacks, TimeOuts, Node.js https://youtu.be/sNlCkq5WoBs
+ - 27/09/2023 - C10-Promises, TimeOuts, Sync Await https://youtu.be/3Y9OR2qg9wQ

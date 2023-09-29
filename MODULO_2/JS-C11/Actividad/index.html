@@ -1,0 +1,30 @@
+<html>
+    <header>
+        <style>
+            .rojo, .amarillo, .verde {
+                border-radius: 50%;
+                height: 100px;
+                width: 100px;
+                background-color: gray;
+                margin: 5px;
+            }
+            .contenedor {
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                width: fit-content;
+            }
+
+        </style>
+    </header>
+    <body>
+        <h1 class="miTitulo" id="primerTitulo"> Mi primer Semaforo</h1>
+        <div class="contenedor">
+            <div class="rojo"></div>
+            <div class="amarillo"></div>
+            <div class="verde"></div>
+        </div>
+        <button onclick="iniciar()"> Iniciar Mi programa</button>
+        <script type="text/javascript" src="./index.js"> </script>
+    </body>
+</html>

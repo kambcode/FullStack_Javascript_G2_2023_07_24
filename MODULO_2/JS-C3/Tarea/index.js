@@ -23,8 +23,8 @@ function calculadora(opcion, primerNumero, segundoNumero) {
         case "multi":
             return primerNumero * segundoNumero;
             break;
-        case "div":
-            return primerNumero / segundoNumero;
+        case "modulo":
+            return primerNumero % segundoNumero;
             break;
         default:
             console.log('Opcion invalida, por favor digita una opción posible')

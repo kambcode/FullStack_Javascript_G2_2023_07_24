@@ -37,10 +37,6 @@
 
 
 ///Creacion de un pull request
-//La peticion para modificar el codigo en la rama proncipal
-// este tiene que ser aprovado por uno o mas dvelopers en el equipo para poder
-// merguear el codigo de mi rama de desarrollo a mi rama principal
-
 
 
 

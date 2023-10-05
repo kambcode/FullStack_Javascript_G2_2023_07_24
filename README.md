@@ -46,3 +46,4 @@ Modulo 2
  - 27/09/2023 - C10-Promises, TimeOuts, Sync Await https://youtu.be/3Y9OR2qg9wQ
  - 28/09/2023 - C11-Manejo del DOM https://youtu.be/nh4tfDV4PY8
  - 02/10/2023 - C12-Git -GitHub https://youtu.be/32wIR-b4jjc
+ - 04/10/2023 - C13- Git PullRequest - https://youtu.be/hC1ZaYqM3DQ

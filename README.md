@@ -47,3 +47,4 @@ Modulo 2
  - 28/09/2023 - C11-Manejo del DOM https://youtu.be/nh4tfDV4PY8
  - 02/10/2023 - C12-Git -GitHub https://youtu.be/32wIR-b4jjc
  - 04/10/2023 - C13- Git PullRequest - https://youtu.be/hC1ZaYqM3DQ
+ - 05/10/2023 - C14- Proyectos https://youtu.be/vVeg52uaYyQ

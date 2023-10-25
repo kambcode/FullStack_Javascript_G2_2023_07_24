@@ -32,7 +32,7 @@ Recuerda, cada vez que quieras actualizar tu codigo local con los ultimos cambio
  - 24/08/2023 - Dudas proyecto final https://youtu.be/za-gRa1QrfQ
   - 01/09/2023 - Clase Extra: Gradientes lineales en CSS  https://youtu.be/39drqD6eN5I
 
-Modulo 2
+### Modulo 2
  - 05/09/2023 - Introduccion al Modulo:  https://youtu.be/5hCNob7NKt0
  - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 1: https://youtu.be/MamZR08ZZ0o
  - 06/09/2023 - C2-JS-FUNCTIONS-VARIABLES-OPERADORES Parte 2: https://youtu.be/Opg8gTEdzE4
@@ -49,7 +49,13 @@ Modulo 2
  - 04/10/2023 - C13- Git PullRequest - https://youtu.be/hC1ZaYqM3DQ
  - 05/10/2023 - C14- Proyectos https://youtu.be/vVeg52uaYyQ
 
- Modulo 3
+ Proyectos
+ - https://youtu.be/V3a1lhXOx2c
+ - https://youtu.be/Mq9x2jhZ2gg
+ - https://youtu.be/nb6TiN-hj0U
+ - https://youtu.be/adtb6NuU1bU
+
+ ### Modulo 3
 
   - 15/10/2023 - C1- Intro https://youtu.be/GZ6uYHYQO_A
   - 20/10/2023 - C2- React Overview https://youtu.be/vlHSCVJw7UI

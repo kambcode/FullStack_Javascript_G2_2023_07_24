@@ -48,3 +48,9 @@ Modulo 2
  - 02/10/2023 - C12-Git -GitHub https://youtu.be/32wIR-b4jjc
  - 04/10/2023 - C13- Git PullRequest - https://youtu.be/hC1ZaYqM3DQ
  - 05/10/2023 - C14- Proyectos https://youtu.be/vVeg52uaYyQ
+
+ Modulo 3
+
+  - 15/10/2023 - C1- Intro https://youtu.be/GZ6uYHYQO_A
+  - 20/10/2023 - C2- React Overview https://youtu.be/vlHSCVJw7UI
+  - 23/10/2023 - C3- React Conceptos https://youtu.be/qEdkkB0GoCM

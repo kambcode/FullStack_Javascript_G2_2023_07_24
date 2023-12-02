@@ -2,6 +2,7 @@
   "name": "clase_1",
   "version": "0.0.1",
   "description": "clase 1",
+  "type": "module",
   "main": "main.js",
   "scripts": {
     "start": "node src/main.mjs",

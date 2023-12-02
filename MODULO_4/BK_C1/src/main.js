@@ -1,3 +1,7 @@
+import { logWorld } from "./index.js";
+
+logWorld("hello world");
+
 const homeList = ["escoba", "platos", "mug"];
 
 homeList.push("sofa");

@@ -68,3 +68,5 @@ Proyectos
 
 - 01/12/2023 - C1 - Intro https://youtu.be/ZTrXjqbHuB0
 - 04/12/2023 - C2 - Streams https://youtu.be/AUDe-uad5uA
+- 11/12/2023 - C3 parte 1 - Http https://youtu.be/4AeSENgU3zk
+- 11/12/2023 - C3 parte 2 - Http https://youtu.be/sFBwWGWp7Hk

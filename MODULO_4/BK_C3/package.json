@@ -1,0 +1,17 @@
+{
+  "name": "bk_c2",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Ya vimos los conceptos teoricos iniciales de NodeJS, miramos su instalación y también tenemos el gestor de paquetes npm, sin duda ya estamos listos para trabajar con librerías muy interesantes del backend, sin embargo, miremos antes algunos de los módulos mas utilizados propios de NodeJS, estos son implementados directamente en NodeJS sin necesidad de instalar librerías o Frameworks y son claves en la gestión de aplicativos Backend.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

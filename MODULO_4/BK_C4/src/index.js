@@ -11,15 +11,15 @@ app.get("/", (req, res) => {
   res.send("hello world");
 });
 
-app.post("/post", (req, res) => {
+app.post("/post/add/item", (req, res) => {
   res.send("post");
 });
 
-app.put("/put", (req, res) => {
+app.put("/put/item", (req, res) => {
   res.send("put");
 });
 
-app.delete("/delete", (req, res) => {
+app.delete("/delete/:id", (req, res) => {
   res.send("delete");
 });
 

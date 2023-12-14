@@ -1,0 +1,19 @@
+{
+  "name": "bk_c4",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Este es nuestro primer modulo de backend propiamente, en este construiremos nuestro primer proyecto backend, miraremos cuales son sus componentes basicos y plantearemos una estructura estandar la cual es recomendada como buenas practicas para manejar un flujo de trabajo organizado, ya con todos los conceptos claros pasemos a mirar una de las librerías mas utilizadas para proyectos Backend NodeJS del mercado y librería en la que se basan muchisimos Frameworks, `express`.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}

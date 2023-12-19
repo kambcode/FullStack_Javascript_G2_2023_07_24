@@ -17,10 +17,10 @@ service -> create id, save the data obj, return -> controller
 
 - we need to create a new object with:
   `   {
-       id: uuid,
-       department: string,
-       pokemon: string,
-   }`
+     id: uuid,
+     department: string,
+     pokemon: string,
+ }`
 
 project-root/
 |-- src/
@@ -53,3 +53,31 @@ paso 3
 todos -> route para get pokeColombia
 todos -> servicio para get data pokeColombia
 todos -> controlador para get pokeColombia
+
+pokeco api //
+
+- controller
+- modelo
+- servicio
+- routes
+
+{
+    "id": "f5b54614-3ad6-473c-bbcc-3553a50f1361",
+    "pokemon": "picachu",
+    "department": "nariño"
+  },
+  {
+    "id": "eb92d0f8-5016-49ca-a9db-2e89eb62ed52",
+    "pokemon": "caterpie",
+    "department": "rioacha"
+  },
+  {
+    "id": "d426642f-ae65-41ea-a376-f85c259a0ef1",
+    "pokemon": "bulbasor",
+    "department": "meta"
+  },
+  {
+    "id": "6d48542e-3c03-4e8f-a04f-04e831746019",
+    "pokemon": "charizard",
+    "department": "putumayo"
+  }

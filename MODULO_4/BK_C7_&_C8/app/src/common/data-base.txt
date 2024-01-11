@@ -1,0 +1,1 @@
+[{"id":"6f34fa70-b259-4364-b435-011c492339ab","firstName":"daniel","lastName":"lozano","email":"dafevilo@outlook.com","password":"$2a$10$wevoIjzT4UdeJCcJqmncKe79ZvBjmvvXdHKwCU4s1OCUCdub/5hD."}]

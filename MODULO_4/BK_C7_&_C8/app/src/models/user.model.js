@@ -1,0 +1,74 @@
+import fs from "fs/promises";
+import bcrypt from "bcryptjs";
+import { v4 as uuidv4 } from "uuid";
+import path from "path";
+import { fileURLToPath } from "url";
+
+//Rutas relativas y absolutas
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const filePath = path.join(__dirname, "../common/data-base.txt");
+
+class UserModel {
+  async createUser({ name, lastName, email, password }) {
+    const existingData = await fs.readFile(filePath, "utf-8");
+    const existingUser = JSON.parse(existingData || "[]");
+
+    const existingEmail = existingUser.filter((user) => user.email === email);
+
+    if (existingEmail[0]) {
+      return { error: "Email already registered" };
+    } else {
+      const encryptedPassword = await bcrypt.hash(password, 10);
+      const id = uuidv4();
+      const userData = {
+        id,
+        firstName: name, //Wilmer
+        lastName: lastName, //Gonzales
+        email: email.toLowerCase(), //wilmergo@outlook.com
+        password: encryptedPassword,
+      };
+
+      existingUser.push(userData);
+
+      await fs.writeFile(filePath, JSON.stringify(existingUser));
+
+      return userData;
+    }
+  }
+
+  async findUser(email) {
+    const existingData = await fs.readFile(filePath, "utf-8");
+    const existingUser = JSON.parse(existingData || "[]");
+
+    const user = existingUser.find((user) => user.email === email);
+
+    if (!user) {
+      return { error: "Email not registered" };
+    } else {
+      return user;
+    }
+  }
+}
+
+export default UserModel;
+
+// FUNCIONES
+
+// export const createUser = async (email) => {
+//   return email;
+// };
+
+// import { createUser } from "path";
+
+// createUser(email);
+
+// CLASES
+
+// import UserModule from "path";
+
+// const userModule = new UserModule();
+
+// userModule.createUser(email);

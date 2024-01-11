@@ -73,3 +73,4 @@ Proyectos
 - 13/12/2023 - C4 parte 1 - Express https://youtu.be/f9ldfLzHTas
 - 15/12/2023 - C5 parte 2 - Express https://youtu.be/XAa_CftUDQ4
 - 18/12/2023 - C6 parte 3 - Express https://youtu.be/g6lHBfPtAdY
+- 10/01/2024 - C7 parte 1 - Express https://youtu.be/bnL4ahoSH9A

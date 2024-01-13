@@ -1,15 +1,11 @@
 import fs from "fs/promises";
 import bcrypt from "bcryptjs";
 import { v4 as uuidv4 } from "uuid";
-import path from "path";
+import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
-//Rutas relativas y absolutas
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const filePath = path.join(__dirname, "../common/data-base.txt");
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const filePath = join(__dirname, "../common/dataBase.txt");
 
 class UserModel {
   async createUser({ name, lastName, email, password }) {

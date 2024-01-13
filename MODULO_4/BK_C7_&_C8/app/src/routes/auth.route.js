@@ -3,6 +3,7 @@ import {
   registerController,
   loginController,
 } from "../controllers/auth.controller.js";
+import { verifyToken } from "../middlewares/auth.middleware.js";
 
 const authRouter = express.Router();
 

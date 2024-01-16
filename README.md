@@ -75,3 +75,4 @@ Proyectos
 - 18/12/2023 - C6 parte 3 - Express https://youtu.be/g6lHBfPtAdY
 - 10/01/2024 - C7 parte 4 - Express https://youtu.be/bnL4ahoSH9A
 - 12/01/2024 - C8 parte 5 - Express https://youtu.be/Lef2DXA0rus
+- 15/01/2024 - C9 parte 1 - Testing https://youtu.be/L-4ALYyTCyo

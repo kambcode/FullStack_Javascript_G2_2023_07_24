@@ -1,4 +1,4 @@
-import { sum, sub, mul, div } from "../math.js";
+import { sum, sub, mul, div } from "../src/math.js";
 
 describe("This is a unit test module", () => {
   it("const is true", () => {

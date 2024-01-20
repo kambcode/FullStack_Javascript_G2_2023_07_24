@@ -53,6 +53,7 @@ class AuthService {
       }
 
       const user = await this.userModel.findUser(email);
+
       const isPassword = await bcrypt.compare(password, user.password);
 
       if (user && isPassword) {

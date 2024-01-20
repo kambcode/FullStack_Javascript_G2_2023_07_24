@@ -77,3 +77,4 @@ Proyectos
 - 12/01/2024 - C8 parte 5 - Express https://youtu.be/Lef2DXA0rus
 - 15/01/2024 - C9 parte 1 - Testing https://youtu.be/L-4ALYyTCyo
 - 17/01/2024 - C10 parte 2 - Testing https://youtu.be/_y4EMe5o7QA
+- 19/01/2024 - C11 parte 3 - Testing https://youtu.be/BKeyjjN4FjU

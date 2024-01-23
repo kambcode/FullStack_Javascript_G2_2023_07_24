@@ -78,3 +78,4 @@ Proyectos
 - 15/01/2024 - C9 parte 1 - Testing https://youtu.be/L-4ALYyTCyo
 - 17/01/2024 - C10 parte 2 - Testing https://youtu.be/_y4EMe5o7QA
 - 19/01/2024 - C11 parte 3 - Testing https://youtu.be/BKeyjjN4FjU
+- 22/01/2024 - C12 - project - https://youtu.be/wT6cxeQAR6U
